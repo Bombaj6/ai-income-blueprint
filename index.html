@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Income Blueprint | Go From AI-Curious to AI-Earning in 21 Days</title>
+  
+  <!-- Meta SEO & Social -->
+  <meta name="description" content="Turn your smartphone and free AI tools into a consistent income stream. Master prompt engineering, commercial design, copywriting, viral video creation, and client acquisition in 21 days.">
+  <meta property="og:title" content="AI Income Blueprint - Turn Your Smartphone Into An AI Income Engine">
+  <meta property="og:description" content="Learn practical, in-demand AI skills, create valuable content, get clients, and start earning even as a student.">
+  <meta property="og:image" content="assets/hero-banner.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts & Tailwind CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              red: '#E61937',
+              redDark: '#B91228',
+              gold: '#F59E0B',
+              dark: '#090C15',
+              card: '#121727',
+              border: 'rgba(255,255,255,0.08)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#090C15] text-slate-100 font-sans antialiased selection:bg-red-600 selection:text-white relative overflow-x-hidden">
+
+  <!-- Background Ambient Glow Accents -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-red-600/15 rounded-full blur-[140px] ambient-glow"></div>
+    <div class="absolute top-[35%] -left-40 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[130px]"></div>
+    <div class="absolute top-[65%] -right-40 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[150px]"></div>
+  </div>
+
+  <!-- Top Announcement Bar -->
+  <aside class="relative z-50 bg-gradient-to-r from-red-950/80 via-red-900/60 to-red-950/80 border-b border-red-500/20 py-2.5 px-4 text-xs md:text-sm text-center font-medium backdrop-blur-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-red-500 text-white animate-pulse">
+        SPECIAL BATCH DISCOUNT
+      </span>
+      <span>🔥 Subsidized Slot Price: <strong><span data-currency-price>₦5,000</span></strong> (Regular: <span class="line-through text-slate-400" data-currency-old-price>₦25,000</span>)</span>
+      <span class="hidden sm:inline text-slate-400">•</span>
+      <span class="text-amber-300 font-semibold flex items-center gap-1">
+        <i data-lucide="clock" class="w-3.5 h-3.5"></i> Offer Ends in: 
+        <span id="top-timer-display" class="font-mono text-white bg-slate-900/80 px-2 py-0.5 rounded border border-white/10">14h 42m</span>
+      </span>
+    </div>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-40 w-full glass-panel border-b border-white/5 transition-all">
+    <div class="max-w-6xl mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#hero-section" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center font-heading font-black text-xl text-white shadow-lg shadow-red-600/30 group-hover:scale-105 transition">
+          Ai
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-bold text-lg md:text-xl tracking-tight text-white leading-none">
+            AI Made Simple
+          </span>
+          <span class="text-[10px] tracking-widest uppercase text-slate-400 font-semibold">
+            Learn • Create • Earn
+          </span>
+        </div>
+      </a>
+
+      <!-- Currency Toggle & CTA -->
+      <div class="flex items-center gap-3 md:gap-5">
+        <!-- Currency Switcher -->
+        <div class="flex items-center bg-slate-900/90 p-1 rounded-full border border-white/10 text-xs font-semibold">
+          <button type="button" class="currency-toggle-btn px-3 py-1 rounded-full transition bg-red-600 text-white" data-currency="NGN">
+            ₦ NGN
+          </button>
+          <button type="button" class="currency-toggle-btn px-3 py-1 rounded-full transition text-slate-400 hover:text-white" data-currency="USD">
+            $ USD
+          </button>
+        </div>
+
+        <!-- Quick Access CTA -->
+        <a href="https://selar.com/pj819hlu90?add_to_cart=1" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-lg shadow-red-600/30 hover:scale-105 transition btn-shine">
+          <span>Enroll Now</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- HERO SECTION -->
+    <section id="hero-section" class="pt-8 md:pt-16 pb-16 md:pb-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        
+        <!-- Hero Header -->
+        <div class="text-center max-w-4xl mx-auto">
+          <!-- Top Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs md:text-sm font-semibold mb-6 animate-pulse">
+            <span class="w-2 h-2 rounded-full bg-red-500"></span>
+            <span>PRACTICAL AI SKILLS • REAL INCOME BLUEPRINT • 2026 EDITION</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="font-heading font-black text-3xl sm:text-5xl md:text-6xl leading-[1.12] tracking-tight text-white mb-6">
+            Go From <span class="text-slate-300">"AI-Curious"</span> To <span class="text-gradient-red">AI-Earning</span> In Just 21 Days.
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-xl md:text-2xl text-slate-300 font-normal leading-relaxed max-w-3xl mx-auto mb-8">
+            <strong class="text-white">No laptop. No tech background. No design skills.</strong> Just your phone and a battle-tested system to turn AI tools into bank alerts.
+          </p>
+
+          <!-- Core Value Bullet Highlights -->
+          <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm text-slate-300 mb-10">
+            <span class="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-white/5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> 100% Smartphone Friendly
+            </span>
+            <span class="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-white/5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Lifetime Access & Community
+            </span>
+            <span class="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-white/5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> First ₦50K Client Framework
+            </span>
+            <span class="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-white/5">
+              <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i> 100% Money-Back Guarantee
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero Card & Visual Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-4">
+          
+          <!-- Left: Offer Highlights & Urgency -->
+          <div class="lg:col-span-6 flex flex-col gap-6">
+            
+            <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl relative overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-40 h-40 bg-red-600/10 rounded-full blur-2xl"></div>
+
+              <!-- Price Box -->
+              <div class="flex items-baseline justify-between border-b border-white/10 pb-5 mb-5">
+                <div>
+                  <span class="text-xs uppercase font-bold tracking-wider text-red-400 block mb-1">
+                    Special Subsidized Entry Fee
+                  </span>
+                  <div class="flex items-baseline gap-3">
+                    <span class="font-heading font-black text-4xl sm:text-5xl text-white" data-currency-price>
+                      ₦5,000
+                    </span>
+                    <span class="text-lg sm:text-xl line-through text-slate-400 font-semibold" data-currency-old-price>
+                      ₦25,000
+                    </span>
+                    <span class="bg-red-500/20 text-red-400 text-xs font-extrabold px-2 py-0.5 rounded border border-red-500/30">
+                      80% OFF
+                    </span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="inline-flex items-center gap-1 text-xs text-emerald-400 font-bold bg-emerald-950/60 px-2.5 py-1 rounded-full border border-emerald-500/30">
+                    <i data-lucide="lock" class="w-3 h-3"></i> Instant Access
+                  </span>
+                </div>
+              </div>
+
+              <!-- Key Takeaways Preview -->
+              <div class="space-y-3.5 mb-7 text-sm text-slate-200">
+                <div class="flex items-start gap-3">
+                  <div class="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center shrink-0 mt-0.5">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">AI Command Mastery:</strong> Learn the secret prompt formulas that get studio-quality results in seconds instead of robotic junk.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center shrink-0 mt-0.5">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Design-for-Hire Visuals:</strong> Create commercial brand flyers, ads & social posters without touching Canva or Photoshop.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center shrink-0 mt-0.5">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Viral Faceless Video Factory:</strong> Produce high-retention TikTok, Reels & Shorts that pull views and paychecks.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center shrink-0 mt-0.5">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">First ₦50K Client Playbook:</strong> Exactly how to package your AI service and close paying business owners on WhatsApp.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Countdown Widget -->
+              <div class="bg-slate-900/80 p-4 rounded-2xl border border-white/5 mb-6">
+                <div class="flex items-center justify-between text-xs text-slate-400 mb-2 font-medium">
+                  <span class="flex items-center gap-1.5 text-amber-400">
+                    <i data-lucide="flame" class="w-4 h-4"></i> Discount Closing Soon:
+                  </span>
+                  <span>Batch Price Expires:</span>
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-center">
+                  <div class="bg-black/50 p-2 rounded-xl border border-white/5">
+                    <span id="timer-hours" class="font-heading font-black text-2xl text-white block">14</span>
+                    <span class="text-[10px] uppercase tracking-wider text-slate-400">Hours</span>
+                  </div>
+                  <div class="bg-black/50 p-2 rounded-xl border border-white/5">
+                    <span id="timer-mins" class="font-heading font-black text-2xl text-white block">42</span>
+                    <span class="text-[10px] uppercase tracking-wider text-slate-400">Minutes</span>
+                  </div>
+                  <div class="bg-black/50 p-2 rounded-xl border border-white/5">
+                    <span id="timer-secs" class="font-heading font-black text-2xl text-red-400 block">18</span>
+                    <span class="text-[10px] uppercase tracking-wider text-slate-400">Seconds</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA Button -->
+              <a href="https://selar.com/pj819hlu90?add_to_cart=1" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 via-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-heading font-extrabold text-lg py-4 px-6 rounded-2xl shadow-xl shadow-red-600/40 hover:scale-[1.02] active:scale-[0.98] transition btn-shine">
+                <span>GET INSTANT ACCESS NOW</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </a>
+
+              <div class="flex items-center justify-center gap-4 text-xs text-slate-400 mt-4 text-center">
+                <span class="flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i> Verified Secure Checkout
+                </span>
+                <span>•</span>
+                <span class="flex items-center gap-1">
+                  <i data-lucide="smartphone" class="w-3.5 h-3.5 text-blue-400"></i> Telegram VIP Classroom
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Right: Hero Banner Flyer Mockup with Floating Accents -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Floating Notification Tag 1 -->
+              <div class="absolute -top-4 -left-4 z-20 bg-slate-900/95 border border-emerald-500/40 px-3.5 py-2 rounded-2xl shadow-xl flex items-center gap-2 backdrop-blur-md">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <div class="text-left">
+                  <div class="text-[11px] font-bold text-white">First Client Landed: ₦60,000</div>
+                  <div class="text-[9px] text-slate-400">"Tunde closed an Instagram brand in 4 days"</div>
+                </div>
+              </div>
+
+              <!-- Floating Notification Tag 2 -->
+              <div class="absolute -bottom-5 -right-3 z-20 bg-slate-900/95 border border-amber-500/40 px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-2.5 backdrop-blur-md">
+                <i data-lucide="gift" class="w-5 h-5 text-amber-400"></i>
+                <div class="text-left">
+                  <div class="text-[11px] font-bold text-amber-300">5 High-Value Bonuses Included</div>
+                  <div class="text-[9px] text-slate-400">Worth <span data-currency-bonus>₦85,000+</span> Free Today</div>
+                </div>
+              </div>
+
+              <!-- Main Mockup Container -->
+              <div class="relative rounded-3xl overflow-hidden border-2 border-red-500/30 shadow-2xl shadow-red-950/80 group">
+                <img 
+                  src="assets/hero-banner.png" 
+                  alt="AI Income Blueprint Class Flyer & Laptop Mockup" 
+                  class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition duration-500"
+                  loading="eager"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-[#090C15] via-transparent to-transparent opacity-60"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-white/90 bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10">
+                  <span class="font-semibold flex items-center gap-1.5">
+                    <i data-lucide="award" class="w-4 h-4 text-amber-400"></i> Rated 4.9/5 by 1,400+ participants
+                  </span>
+                  <span class="text-red-400 font-bold">Verified Class</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF MARQUEE / STATS -->
+    <section class="py-10 border-y border-white/5 bg-slate-950/60">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <div class="font-heading font-black text-3xl md:text-4xl text-gradient-red mb-1">1,420+</div>
+            <div class="text-xs md:text-sm text-slate-400 font-medium">Students Enrolled</div>
+          </div>
+          <div>
+            <div class="font-heading font-black text-3xl md:text-4xl text-gradient-gold mb-1">₦50K - ₦250K</div>
+            <div class="text-xs md:text-sm text-slate-400 font-medium">Avg. Student Gig Earnings</div>
+          </div>
+          <div>
+            <div class="font-heading font-black text-3xl md:text-4xl text-white mb-1">21 Days</div>
+            <div class="text-xs md:text-sm text-slate-400 font-medium">From Zero to Paid</div>
+          </div>
+          <div>
+            <div class="font-heading font-black text-3xl md:text-4xl text-emerald-400 mb-1">100%</div>
+            <div class="text-xs md:text-sm text-slate-400 font-medium">Smartphone Ready</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE PROBLEM VS THE OPPORTUNITY: "STOP WATCHING AI" -->
+    <section class="py-16 md:py-24 px-4 relative">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-bold uppercase tracking-wider text-red-500 mb-2 block">
+            THE RAW TRUTH NOBODY TELLS YOU
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white mb-4">
+            AI is Not Hard. <br><span class="text-gradient-red">Most People Just Don't Know How To Monetize It.</span>
+          </h2>
+          <p class="text-slate-300 text-base sm:text-lg">
+            Right now, thousands of people open ChatGPT, type random questions, get robotic replies, and conclude that <em class="text-white">"AI doesn't work for me."</em> Meanwhile, smart individuals are cashing out weekly.
+          </p>
+        </div>
+
+        <!-- Before vs After Interactive Tab Section -->
+        <div class="glass-panel p-6 sm:p-10 rounded-3xl border border-white/10">
+          <div class="flex items-center justify-center gap-3 mb-8">
+            <button id="tab-before-btn" class="px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition bg-slate-800 text-white border-red-500 flex items-center gap-2">
+              <i data-lucide="x-circle" class="w-4 h-4 text-red-400"></i> The Struggle (Without Blueprint)
+            </button>
+            <button id="tab-after-btn" class="px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition bg-transparent text-slate-400 border-transparent hover:text-white flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> The Breakthrough (With Blueprint)
+            </button>
+          </div>
+
+          <!-- Tab Content: Before -->
+          <div id="tab-before-content" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="bg-red-950/20 border border-red-500/20 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 text-red-400 font-bold text-base mb-2">
+                <i data-lucide="alert-triangle" class="w-5 h-5"></i> Staring At Empty Prompts
+              </div>
+              <p class="text-sm text-slate-300">You type basic commands into ChatGPT and get flat, robotic sentences that nobody would ever pay for.</p>
+            </div>
+
+            <div class="bg-red-950/20 border border-red-500/20 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 text-red-400 font-bold text-base mb-2">
+                <i data-lucide="clock" class="w-5 h-5"></i> Wasting 4 Hours on Canva
+              </div>
+              <p class="text-sm text-slate-300">Spending half your day dragging shapes around only to create amateur designs that get rejected by clients.</p>
+            </div>
+
+            <div class="bg-red-950/20 border border-red-500/20 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 text-red-400 font-bold text-base mb-2">
+                <i data-lucide="camera-off" class="w-5 h-5"></i> Camera Shyness & No Video Skills
+              </div>
+              <p class="text-sm text-slate-300">Watching teenagers make thousands from viral TikToks and Reels while you stay invisible because you hate showing your face.</p>
+            </div>
+
+            <div class="bg-red-950/20 border border-red-500/20 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 text-red-400 font-bold text-base mb-2">
+                <i data-lucide="frown" class="w-5 h-5"></i> Zero Paying Clients
+              </div>
+              <p class="text-sm text-slate-300">Begging friends for jobs or undercharging ₦2,000 because you don't know how to package high-ticket AI solutions.</p>
+            </div>
+          </div>
+
+          <!-- Tab Content: After (Hidden initially) -->
+          <div id="tab-after-content" class="hidden grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="bg-emerald-950/20 border border-emerald-500/30 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 text-emerald-400 font-bold text-base mb-2">
+                <i data-lucide="sparkles" class="w-5 h-5"></i> Master Formula Prompting
+              </div>
+              <p class="text-sm text-slate-300">You apply our plug-and-play frameworks to command AI with surgical precision, getting commercial-ready copy in 90 seconds.</p>
+            </div>
+
+            <div class="bg-emerald-950/20 border border-emerald-500/30 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 text-emerald-400 font-bold text-base mb-2">
+                <i data-lucide="palette" class="w-5 h-5"></i> Studio Visuals in Minutes
+              </div>
+              <p class="text-sm text-slate-300">Generate jaw-dropping 3D product renders, event flyers, and brand graphics directly from your phone that clients happily pay ₦15K–₦30K for.</p>
+            </div>
+
+            <div class="bg-emerald-950/20 border border-emerald-500/30 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 text-emerald-400 font-bold text-base mb-2">
+                <i data-lucide="video" class="w-5 h-5"></i> 100% Faceless Viral Video Engines
+              </div>
+              <p class="text-sm text-slate-300">Create compelling story videos and viral podcast shorts using AI voices and cinematic visuals without ever turning on a camera.</p>
+            </div>
+
+            <div class="bg-emerald-950/20 border border-emerald-500/30 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 text-emerald-400 font-bold text-base mb-2">
+                <i data-lucide="wallet" class="w-5 h-5"></i> The First ₦50K Client Funnel
+              </div>
+              <p class="text-sm text-slate-300">Send our tested WhatsApp and DM scripts to local businesses, ecommerce owners, and creators to close recurring retainers.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE EARNINGS ESTIMATOR CALCULATOR -->
+    <section class="py-16 md:py-20 px-4 bg-gradient-to-b from-slate-950/80 via-[#0B0F1D] to-slate-950/80">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase mb-3">
+            <i data-lucide="calculator" class="w-3.5 h-3.5"></i> Interactive Income Simulator
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl text-white mb-3">
+            How Much Could You Earn With AI?
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+            Drag the slider to see how simple it is to turn a few spare hours a week into predictable extra income.
+          </p>
+        </div>
+
+        <div class="glass-panel-glow p-6 sm:p-10 rounded-3xl border border-white/10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            <!-- Controls -->
+            <div class="space-y-6">
+              <!-- Service selector -->
+              <div>
+                <label for="service-select" class="block text-xs uppercase font-bold text-slate-300 mb-2">
+                  Select High-Income AI Service:
+                </label>
+                <select id="service-select" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500 cursor-pointer">
+                  <option value="0">AI Commercial Flyers & Brand Visuals (₦15K / $25 per pack)</option>
+                  <option value="1" selected>AI Copywriting, Ad Copy & Emails (₦25K / $45 per client)</option>
+                  <option value="2">Viral Faceless Video & Reels Creation (₦40K / $75 per gig)</option>
+                  <option value="3">Full Content & Social Growth Retainer (₦65K / $110 per month)</option>
+                </select>
+              </div>
+
+              <!-- Slider -->
+              <div>
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-xs uppercase font-bold text-slate-300">Number of Clients / Gigs Per Month:</span>
+                  <span class="font-heading font-black text-xl text-red-400 bg-slate-900 px-3 py-1 rounded-lg border border-white/5" id="client-count-display">3</span>
+                </div>
+                <input type="range" id="client-slider" min="1" max="10" value="3" class="w-full">
+                <div class="flex justify-between text-[11px] text-slate-400 mt-2 font-medium">
+                  <span>1 Client</span>
+                  <span>5 Clients</span>
+                  <span>10 Clients</span>
+                </div>
+              </div>
+
+              <!-- Commitment note -->
+              <div class="flex items-center gap-2 text-xs text-slate-400 bg-slate-900/60 p-3 rounded-xl border border-white/5">
+                <i data-lucide="clock" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                <span>Estimated effort required: <strong class="text-white" id="hours-estimate">~5 hrs/week</strong> on your phone.</span>
+              </div>
+            </div>
+
+            <!-- Estimated Returns Card -->
+            <div class="bg-gradient-to-br from-red-950/40 via-slate-900 to-black p-6 rounded-2xl border border-red-500/30 text-center flex flex-col justify-center items-center">
+              <span class="text-xs uppercase tracking-wider font-bold text-slate-400 mb-2">
+                Estimated Monthly Extra Income
+              </span>
+              <div class="font-heading font-black text-4xl sm:text-5xl text-gradient-gold mb-3" id="estimated-income">
+                ₦75,000
+              </div>
+              <p class="text-xs text-slate-300 max-w-xs mb-6">
+                That's enough to pay bills, cover campus expenses, or build a personal emergency savings buffer—working strictly with your phone.
+              </p>
+              <a href="https://selar.com/pj819hlu90?add_to_cart=1" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-red-600 hover:bg-red-500 text-white font-bold text-sm rounded-xl shadow-lg shadow-red-600/30 transition flex items-center justify-center gap-2">
+                <span>Start Learning for <span data-currency-price>₦5,000</span></span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRICULUM BREAKDOWN: THE 6 ACTIONABLE MODULES -->
+    <section id="curriculum" class="py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-red-500 mb-2 block">
+            STEP-BY-STEP SYLLABUS
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white mb-4">
+            Everything You Will Master Inside AI Made Simple
+          </h2>
+          <p class="text-slate-300 text-base sm:text-lg">
+            No endless theory or boring lectures. Every module is practical, focused on client acquisition, and structured so you can start pitching within days.
+          </p>
+        </div>
+
+        <!-- Modules Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Module 1 -->
+          <div class="glass-card p-6 rounded-3xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-2xl bg-red-600/20 text-red-400 font-heading font-black text-lg flex items-center justify-center border border-red-500/20">
+                  01
+                </span>
+                <span class="text-[11px] font-bold uppercase text-red-400 tracking-wider bg-red-950/60 px-2.5 py-1 rounded-full border border-red-500/30">
+                  Core Foundation
+                </span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">
+                AI Command Mastery & Prompt Formulas
+              </h3>
+              <p class="text-sm text-slate-300 mb-4">
+                The exact formulas for structuring prompts that force AI models to think like seasoned professionals instead of giving shallow summaries.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> The C.R.A.F.T. prompt architecture</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> How to train AI on specific brand voices</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Free vs freemium tools comparison</li>
+              </ul>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+              <span>Duration: Practical Walkthrough</span>
+              <span class="text-emerald-400 font-semibold">100% Mobile Ready</span>
+            </div>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="glass-card p-6 rounded-3xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-2xl bg-amber-600/20 text-amber-400 font-heading font-black text-lg flex items-center justify-center border border-amber-500/20">
+                  02
+                </span>
+                <span class="text-[11px] font-bold uppercase text-amber-400 tracking-wider bg-amber-950/60 px-2.5 py-1 rounded-full border border-amber-500/30">
+                  Instant Cashflow Skill
+                </span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">
+                High-Converting AI Copywriting
+              </h3>
+              <p class="text-sm text-slate-300 mb-4">
+                Generate high-converting sales copies, Instagram captions, ad headlines, and email sequences even if you failed English literature.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Writing ads that get clicks & purchases</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Crafting viral social media threads & captions</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> WhatsApp promotional broadcasts that sell</li>
+              </ul>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+              <span>Deliverable: Full Copy Kit</span>
+              <span class="text-amber-400 font-semibold">High Client Demand</span>
+            </div>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="glass-card p-6 rounded-3xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-2xl bg-cyan-600/20 text-cyan-400 font-heading font-black text-lg flex items-center justify-center border border-cyan-500/20">
+                  03
+                </span>
+                <span class="text-[11px] font-bold uppercase text-cyan-400 tracking-wider bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/30">
+                  Visual Mastery
+                </span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">
+                Design-For-Hire Commercial Visuals
+              </h3>
+              <p class="text-sm text-slate-300 mb-4">
+                Create head-turning flyers, 3D graphics, event banners, and promotional posters without struggling with complex software.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> High-resolution graphic generation on phone</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Flawless text placement and style matching</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Packaging designs for local small businesses</li>
+              </ul>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+              <span>Avg Charge: ₦15K–₦30K/pack</span>
+              <span class="text-cyan-400 font-semibold">Zero Design Talent Needed</span>
+            </div>
+          </div>
+
+          <!-- Module 4 -->
+          <div class="glass-card p-6 rounded-3xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-2xl bg-purple-600/20 text-purple-400 font-heading font-black text-lg flex items-center justify-center border border-purple-500/20">
+                  04
+                </span>
+                <span class="text-[11px] font-bold uppercase text-purple-400 tracking-wider bg-purple-950/60 px-2.5 py-1 rounded-full border border-purple-500/30">
+                  Viral Media
+                </span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">
+                AI Viral Video & Faceless Creation
+              </h3>
+              <p class="text-sm text-slate-300 mb-4">
+                Ride the explosive wave of short-form videos. Learn how to generate storytelling clips, podcast-style shorts, and reels that amass millions of views.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> AI voiceover synthesis & auto-captions</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> CapCut mobile pacing, transitions & B-roll</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Faceless YouTube & TikTok channel setup</li>
+              </ul>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+              <span>Format: TikTok, Reels, Shorts</span>
+              <span class="text-purple-400 font-semibold">Viral Multipliers</span>
+            </div>
+          </div>
+
+          <!-- Module 5 -->
+          <div class="glass-card p-6 rounded-3xl flex flex-col justify-between border-red-500/30">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-2xl bg-red-600/30 text-red-400 font-heading font-black text-lg flex items-center justify-center border border-red-500/30">
+                  05
+                </span>
+                <span class="text-[11px] font-bold uppercase text-red-400 tracking-wider bg-red-950/80 px-2.5 py-1 rounded-full border border-red-500/40">
+                  The Cash Engine
+                </span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">
+                The "First ₦50,000 Client" Funnel
+              </h3>
+              <p class="text-sm text-slate-300 mb-4">
+                Where the money actually comes from. How to identify businesses bleeding money, propose your AI services, and close them on WhatsApp without feeling pushy.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Finding hot client leads on IG & Google Maps</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Word-for-word DM & cold outreach templates</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Confident pricing psychology (Never undercharge)</li>
+              </ul>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+              <span>Output: Signed Client Contracts</span>
+              <span class="text-red-400 font-semibold">High ROI</span>
+            </div>
+          </div>
+
+          <!-- Module 6 -->
+          <div class="glass-card p-6 rounded-3xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-2xl bg-emerald-600/20 text-emerald-400 font-heading font-black text-lg flex items-center justify-center border border-emerald-500/20">
+                  06
+                </span>
+                <span class="text-[11px] font-bold uppercase text-emerald-400 tracking-wider bg-emerald-950/60 px-2.5 py-1 rounded-full border border-emerald-500/30">
+                  VIP Vault
+                </span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">
+                The AI Resource Library & E-Library
+              </h3>
+              <p class="text-sm text-slate-300 mb-4">
+                Direct access to our continuously updated vault of prompts, swipe files, software lists, and client proposals so you never start from a blank screen.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> 500+ curated and tested commercial prompts</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Cheat sheets & bookmark directories</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Lifetime future additions & updates</li>
+              </ul>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+              <span>Format: Notion & Telegram Vault</span>
+              <span class="text-emerald-400 font-semibold">Lifetime Access</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXCLUSIVE BONUSES (OVER ₦85,000 / $120 IN VALUE) -->
+    <section class="py-16 md:py-24 px-4 bg-gradient-to-b from-[#0B0F1D] to-[#090C15] relative">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-2 block">
+            LIMITED-TIME ENROLLMENT GIFTS
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white mb-4">
+            Enroll Today & Unlock <span class="text-gradient-gold" data-currency-bonus>₦85,000+</span> In Free Bonuses
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base">
+            These complementary toolkits and masterclasses are included completely free of charge when you secure your slot in this batch.
+          </p>
+        </div>
+
+        <!-- Bonus Cards List -->
+        <div class="space-y-4">
+
+          <!-- Bonus 1 -->
+          <div class="glass-card p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-amber-500/20 hover:border-amber-500/50">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-black border border-white/10 flex items-center justify-center shrink-0 text-white font-bold text-xl">
+                <i data-lucide="smartphone" class="w-6 h-6 text-pink-400"></i>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded">BONUS #1</span>
+                  <span class="text-xs text-slate-400 line-through">Value: ₦20,000 / $30</span>
+                </div>
+                <h3 class="font-heading font-bold text-lg text-white mt-0.5">
+                  US/UK Monetizable TikTok Account Creation Guide
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Step-by-step instructions to create and verify a monetizable TikTok creator account from Nigeria or Africa so you can earn in dollars.
+                </p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/50 px-3 py-1.5 rounded-full border border-emerald-500/30 whitespace-nowrap self-end sm:self-center">
+              FREE TODAY
+            </span>
+          </div>
+
+          <!-- Bonus 2 -->
+          <div class="glass-card p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-white/5 hover:border-white/20">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center shrink-0 text-white font-bold text-xl">
+                <i data-lucide="film" class="w-6 h-6 text-cyan-400"></i>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded">BONUS #2</span>
+                  <span class="text-xs text-slate-400 line-through">Value: ₦15,000 / $25</span>
+                </div>
+                <h3 class="font-heading font-bold text-lg text-white mt-0.5">
+                  CapCut Mobile Speed-Editing Masterclass
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Learn fast mobile editing hacks, sound design secrets, zoom cuts, and text effects that make faceless videos look like Hollywood studio edits.
+                </p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/50 px-3 py-1.5 rounded-full border border-emerald-500/30 whitespace-nowrap self-end sm:self-center">
+              FREE TODAY
+            </span>
+          </div>
+
+          <!-- Bonus 3 -->
+          <div class="glass-card p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-white/5 hover:border-white/20">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center shrink-0 text-white font-bold text-xl">
+                <i data-lucide="terminal" class="w-6 h-6 text-emerald-400"></i>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded">BONUS #3</span>
+                  <span class="text-xs text-slate-400 line-through">Value: ₦15,000 / $20</span>
+                </div>
+                <h3 class="font-heading font-bold text-lg text-white mt-0.5">
+                  The Master Prompt Engineering Cheat Code
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Over 300+ tested prompts specifically engineered for marketing copy, ad hooks, business plans, sales letters, and content creation.
+                </p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/50 px-3 py-1.5 rounded-full border border-emerald-500/30 whitespace-nowrap self-end sm:self-center">
+              FREE TODAY
+            </span>
+          </div>
+
+          <!-- Bonus 4 -->
+          <div class="glass-card p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-white/5 hover:border-white/20">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center shrink-0 text-white font-bold text-xl">
+                <i data-lucide="image" class="w-6 h-6 text-purple-400"></i>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded">BONUS #4</span>
+                  <span class="text-xs text-slate-400 line-through">Value: ₦15,000 / $20</span>
+                </div>
+                <h3 class="font-heading font-bold text-lg text-white mt-0.5">
+                  Photorealistic Image Generation Prompts Kit
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Exact lighting, camera angle, and aspect ratio keywords to produce stunning portraits, luxury lifestyle mockups, and corporate flyers.
+                </p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/50 px-3 py-1.5 rounded-full border border-emerald-500/30 whitespace-nowrap self-end sm:self-center">
+              FREE TODAY
+            </span>
+          </div>
+
+          <!-- Bonus 5 -->
+          <div class="glass-card p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-red-500/30 bg-red-950/10">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-red-900/30 border border-red-500/30 flex items-center justify-center shrink-0 text-white font-bold text-xl">
+                <i data-lucide="message-square" class="w-6 h-6 text-red-400"></i>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold text-red-400 bg-red-950/60 px-2 py-0.5 rounded">BONUS #5</span>
+                  <span class="text-xs text-slate-400 line-through">Value: ₦20,000 / $30</span>
+                </div>
+                <h3 class="font-heading font-bold text-lg text-white mt-0.5">
+                  Client Outreach DM & WhatsApp Closing Scripts
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Copy-and-paste conversation scripts to pitch business owners, handle price objections, and collect deposits straight into your account.
+                </p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/50 px-3 py-1.5 rounded-full border border-emerald-500/30 whitespace-nowrap self-end sm:self-center">
+              FREE TODAY
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Total Bonus Summary Box -->
+        <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-amber-500/10 via-red-500/10 to-amber-500/10 border border-amber-500/30 text-center">
+          <div class="text-sm font-semibold text-slate-300">
+            Total Real-World Value of Training + All 5 Bonuses: 
+            <span class="line-through text-slate-400 font-bold ml-1">₦110,000+ ($150)</span>
+          </div>
+          <div class="text-xl sm:text-2xl font-heading font-black text-white mt-1">
+            Yours Today For Just <span class="text-gradient-red" data-currency-price>₦5,000</span> ($10)
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHO IS THIS FOR? -->
+    <section class="py-16 md:py-20 px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-red-500 mb-2 block">
+            IS THIS THE RIGHT FIT FOR YOU?
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl text-white">
+            Designed Specifically For Ambitious Beginners
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="glass-card p-6 rounded-3xl border border-white/5">
+            <div class="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Students & Fresh Grads</h3>
+            <p class="text-sm text-slate-300">
+              Build an independent income stream that fits around your lecture schedule, without waiting around for scarce corporate internships.
+            </p>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl border border-white/5">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+              <i data-lucide="briefcase" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Freelancers & Creators</h3>
+            <p class="text-sm text-slate-300">
+              Deliver projects 10x faster, expand your service offerings, and double your rates by offering turnkey AI solutions to high-paying clients.
+            </p>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl border border-white/5">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4">
+              <i data-lucide="store" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Small Business Owners</h3>
+            <p class="text-sm text-slate-300">
+              Cut expensive design and agency bills. Generate professional marketing campaigns and video commercials in-house within minutes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REAL PARTICIPANT TESTIMONIALS & RESULTS -->
+    <section class="py-16 md:py-24 px-4 bg-slate-950/70 border-t border-white/5">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2 block">
+            VERIFIED SUCCESS STORIES
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white mb-4">
+            "I Landed My First AI Client In Week Two"
+          </h2>
+          <p class="text-slate-300 text-base">
+            Don't just take our word for it. Here is what real students and participants from recent sessions have to say.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Testimonial 1 -->
+          <div class="glass-card p-6 rounded-3xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-sm text-slate-300 italic mb-6">
+                "Honestly I thought I needed a high-end laptop with 16GB RAM to do anything serious with AI. Emmanuel showed us how to do everything straight from an Android phone. I got hired by a boutique clothing store in Ikeja to write their weekly social posts for ₦45,000/month."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+              <div class="w-10 h-10 rounded-full bg-red-600/30 text-red-400 font-bold flex items-center justify-center font-heading">
+                TO
+              </div>
+              <div>
+                <div class="text-sm font-bold text-white">Tolani O.</div>
+                <div class="text-xs text-slate-400">Undergraduate, UNILAG</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="glass-card p-6 rounded-3xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-sm text-slate-300 italic mb-6">
+                "The flyer generation prompts alone are worth ₦50,000. I used to spend hours struggling on Canva. Now in 2 minutes I generate 4 clean design concepts, client picks one, and sends ₦15k immediately. Best ₦5,000 investment I ever made."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+              <div class="w-10 h-10 rounded-full bg-emerald-600/30 text-emerald-400 font-bold flex items-center justify-center font-heading">
+                CK
+              </div>
+              <div>
+                <div class="text-sm font-bold text-white">Chidi K.</div>
+                <div class="text-xs text-slate-400">Digital Marketer, Abuja</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="glass-card p-6 rounded-3xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-sm text-slate-300 italic mb-6">
+                "The US TikTok bonus and faceless video breakdown blew my mind. My second faceless video hit 140K views on TikTok. Emmanuel is very patient in the Telegram group answering questions. Highly recommended!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+              <div class="w-10 h-10 rounded-full bg-blue-600/30 text-blue-400 font-bold flex items-center justify-center font-heading">
+                FA
+              </div>
+              <div>
+                <div class="text-sm font-bold text-white">Fatima A.</div>
+                <div class="text-xs text-slate-400">Content Creator, Port Harcourt</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INSTRUCTOR BIO -->
+    <section class="py-16 md:py-20 px-4">
+      <div class="max-w-4xl mx-auto glass-panel p-6 sm:p-10 rounded-3xl border border-white/10">
+        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-3xl bg-gradient-to-br from-red-600 to-amber-600 p-1 shrink-0 shadow-xl shadow-red-950/60">
+            <div class="w-full h-full rounded-[22px] bg-slate-900 flex items-center justify-center font-heading font-black text-3xl sm:text-4xl text-white">
+              EE
+            </div>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-red-400">Meet Your Mentor</span>
+            <h3 class="font-heading font-black text-2xl sm:text-3xl text-white mt-1 mb-2">
+              Emmanuel Eromosele
+            </h3>
+            <p class="text-xs text-amber-400 font-semibold mb-3">
+              Founder, AI Made Simple • Practical AI Trainer & Digital Growth Consultant
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              "My mission is simple: break down intimidating artificial intelligence technologies into straightforward, smartphone-friendly systems anyone can use to create real financial freedom. I don't teach abstract coding algorithms; I teach practical skills that get clients paying you immediately."
+            </p>
+            <div class="flex flex-wrap items-center gap-4 text-xs text-slate-400">
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> Over 3,000+ Students Mentored</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> Practical, Zero-Fluff Approach</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE IRRESISTIBLE OFFER & FINAL PRICING CARD -->
+    <section id="pricing" class="py-16 md:py-24 px-4 relative">
+      <div class="max-w-3xl mx-auto">
+        
+        <div class="text-center mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-red-500 mb-2 block">
+            DON'T WAIT UNTIL IT'S TOO LATE
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white mb-3">
+            Lock In Your Subsidized Access Now
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base">
+            Those who learn AI early will possess a massive unfair advantage. Those who hesitate will spend double trying to catch up.
+          </p>
+        </div>
+
+        <div class="glass-panel-glow p-6 sm:p-10 rounded-3xl relative overflow-hidden border-2 border-red-500/40 shadow-2xl shadow-red-950/80">
+          
+          <!-- Top Badge -->
+          <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-6 flex-wrap gap-3">
+            <div>
+              <span class="text-xs uppercase font-extrabold text-red-400 tracking-wider block">COMPLETE PACKAGE ACCESS</span>
+              <h3 class="font-heading font-black text-2xl sm:text-3xl text-white">AI Income Blueprint (21-Day Pass)</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-slate-400 line-through font-semibold" data-currency-old-price>₦25,000</div>
+              <div class="font-heading font-black text-3xl sm:text-4xl text-gradient-red" data-currency-price>₦5,000</div>
+            </div>
+          </div>
+
+          <!-- Feature Stack Checklist -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-xs sm:text-sm text-slate-200">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>All 6 Core Income Modules</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>US/UK TikTok Monetization Blueprint</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>CapCut Speed-Editing Masterclass</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>300+ Commercial Prompts Swipe File</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Photorealistic Image Prompts Bible</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>WhatsApp & DM Outreach Scripts</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>VIP Telegram Interactive Classroom</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Lifetime Updates & Resource Access</span>
+            </div>
+          </div>
+
+          <!-- Guarantee Callout -->
+          <div class="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-4 flex items-center gap-4 mb-8">
+            <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-amber-300">100% Risk-Free Moneyback Guarantee</div>
+              <div class="text-xs text-slate-300">Attend the class, follow the practical demonstrations. If you don't feel you acquired real monetization skills, get a complete refund. No questions asked.</div>
+            </div>
+          </div>
+
+          <!-- Checkout CTA Button -->
+          <a href="https://selar.com/pj819hlu90?add_to_cart=1" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 via-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-heading font-extrabold text-lg sm:text-xl py-4 sm:py-5 px-6 rounded-2xl shadow-2xl shadow-red-600/50 hover:scale-[1.02] active:scale-[0.98] transition btn-shine mb-4 text-center">
+            <span>CLAIM MY SPOT NOW FOR <span data-currency-price>₦5,000</span></span>
+            <i data-lucide="arrow-right" class="w-6 h-6"></i>
+          </a>
+
+          <div class="text-center text-xs text-slate-400 space-y-1">
+            <p>Direct immediate redirect to the private Telegram class group after payment confirmation.</p>
+            <p class="text-slate-400">Accepted: Bank Transfer, Debit Card, Apple Pay, Mobile Money via Selar.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (FAQ) -->
+    <section class="py-16 md:py-20 px-4">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-red-500 mb-2 block">
+            GOT QUESTIONS?
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl text-white">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item glass-card rounded-2xl border border-white/5 overflow-hidden">
+            <button type="button" class="accordion-header w-full p-5 text-left font-heading font-bold text-base sm:text-lg text-white flex items-center justify-between gap-4 cursor-pointer">
+              <span>Do I really not need a laptop? Can I do this entirely on my phone?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+            </button>
+            <div class="accordion-content px-5 pb-5 text-sm text-slate-300 leading-relaxed">
+              Yes, 100%. Every single AI tool, prompt generator, and mobile editor taught in this course has a lightweight mobile app or works seamlessly in your smartphone browser (Chrome, Safari). You do not need an expensive computer.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item glass-card rounded-2xl border border-white/5 overflow-hidden">
+            <button type="button" class="accordion-header w-full p-5 text-left font-heading font-bold text-base sm:text-lg text-white flex items-center justify-between gap-4 cursor-pointer">
+              <span>Do I have to pay expensive monthly subscriptions for AI tools?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+            </button>
+            <div class="accordion-content px-5 pb-5 text-sm text-slate-300 leading-relaxed">
+              No. We specifically focus on free tools and generous free tiers (ChatGPT Free, Microsoft Copilot, Claude Free, CapCut Free, and top-tier free image generators). You can land your first ₦50K+ without spending a dime on software.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item glass-card rounded-2xl border border-white/5 overflow-hidden">
+            <button type="button" class="accordion-header w-full p-5 text-left font-heading font-bold text-base sm:text-lg text-white flex items-center justify-between gap-4 cursor-pointer">
+              <span>What if I have zero prior tech or design experience?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+            </button>
+            <div class="accordion-content px-5 pb-5 text-sm text-slate-300 leading-relaxed">
+              This class was built deliberately for complete beginners. If you know how to send a WhatsApp text message and copy-paste text, you have all the prerequisite skills needed to follow every step.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="accordion-item glass-card rounded-2xl border border-white/5 overflow-hidden">
+            <button type="button" class="accordion-header w-full p-5 text-left font-heading font-bold text-base sm:text-lg text-white flex items-center justify-between gap-4 cursor-pointer">
+              <span>How will I access the training after paying?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+            </button>
+            <div class="accordion-content px-5 pb-5 text-sm text-slate-300 leading-relaxed">
+              Immediately upon checkout confirmation on Selar, you are automatically redirected to the private VIP Telegram classroom group. You also receive an email receipt with your permanent access link.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="accordion-item glass-card rounded-2xl border border-white/5 overflow-hidden">
+            <button type="button" class="accordion-header w-full p-5 text-left font-heading font-bold text-base sm:text-lg text-white flex items-center justify-between gap-4 cursor-pointer">
+              <span>Can I pay with bank transfer in Nigerian Naira?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+            </button>
+            <div class="accordion-content px-5 pb-5 text-sm text-slate-300 leading-relaxed">
+              Yes! Selar supports Bank Transfer, USSD, Nigerian Debit/Credit Cards, Mobile Money, and international cards. Simply click any "Enroll Now" button and pick your preferred payment channel.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-12 border-t border-white/5 bg-[#06080E] text-slate-400 text-xs text-center px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-lg bg-red-600 flex items-center justify-center font-heading font-bold text-white text-xs">
+          Ai
+        </div>
+        <span class="text-white font-semibold">AI Made Simple &bull; Emmanuel Eromosele</span>
+      </div>
+      <div>
+        &copy; 2026 AI Income Blueprint. All rights reserved.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://selar.com/pj819hlu90" class="hover:text-white transition">Official Selar Page</a>
+        <span>&bull;</span>
+        <a href="#hero-section" class="hover:text-white transition">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY BOTTOM FLOATING BAR (MOBILE & DESKTOP ON SCROLL) -->
+  <aside id="sticky-cta-bar" class="fixed bottom-0 left-0 right-0 z-50 glass-panel border-t border-red-500/30 p-3 sm:p-4 transform translate-y-full transition-transform duration-300 backdrop-blur-xl">
+    <div class="max-w-5xl mx-auto flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:block">
+          <div class="text-xs uppercase font-extrabold text-red-400">AI INCOME BLUEPRINT</div>
+          <div class="text-xs text-slate-300">Turn your phone into an income engine</div>
+        </div>
+        <div class="flex items-baseline gap-2">
+          <span class="font-heading font-black text-xl sm:text-2xl text-white" data-currency-price>₦5,000</span>
+          <span class="text-xs line-through text-slate-400" data-currency-old-price>₦25,000</span>
+        </div>
+      </div>
+      <a href="https://selar.com/pj819hlu90?add_to_cart=1" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-heading font-extrabold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-lg shadow-red-600/30 hover:scale-105 transition btn-shine whitespace-nowrap">
+        GET INSTANT ACCESS &rarr;
+      </a>
+    </div>
+  </aside>
+
+  <!-- LIVE SOCIAL PROOF TOAST -->
+  <aside id="social-toast" class="hidden-toast fixed bottom-20 left-4 z-40 max-w-xs bg-slate-900/95 border border-white/10 p-3 rounded-2xl shadow-2xl backdrop-blur-lg flex items-center gap-3">
+    <div class="w-9 h-9 rounded-xl bg-red-600/20 text-red-400 flex items-center justify-center shrink-0">
+      <i data-lucide="check-circle" class="w-5 h-5"></i>
+    </div>
+    <div class="text-left text-xs">
+      <div class="text-slate-200"><strong class="text-white" id="toast-user">Blessing K.</strong> just enrolled</div>
+      <div class="text-slate-400 text-[10px]"><span id="toast-location">Abuja, Nigeria</span> &bull; <span id="toast-time">4 mins ago</span></div>
+    </div>
+  </aside>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* Custom Styles & Design System for AI Income Blueprint */
+:root {
+  --primary-red: #E61937;
+  --primary-red-hover: #C5132D;
+  --primary-glow: rgba(230, 25, 55, 0.35);
+  --accent-gold: #F59E0B;
+  --accent-gold-glow: rgba(245, 158, 11, 0.25);
+  --dark-bg: #090C15;
+  --dark-card: #121727;
+  --dark-card-border: rgba(255, 255, 255, 0.08);
+  --dark-card-hover: #171E32;
+  --text-main: #F1F5F9;
+  --text-muted: #94A3B8;
+  --text-dim: #64748B;
+  --accent-cyan: #06B6D4;
+  --accent-green: #10B981;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(18, 23, 39, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(18, 23, 39, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(230, 25, 55, 0.25);
+  box-shadow: 0 0 35px rgba(230, 25, 55, 0.12);
+}
+
+.glass-card {
+  background: rgba(23, 30, 50, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(230, 25, 55, 0.4);
+  box-shadow: 0 12px 30px -10px rgba(230, 25, 55, 0.2);
+}
+
+/* Animated gradient text */
+.text-gradient-red {
+  background: linear-gradient(135deg, #FF4D6D 0%, #E61937 50%, #FF85A1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #38BDF8 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pulsing subtle ambient glow */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+.ambient-glow {
+  animation: pulse-subtle 8s infinite ease-in-out;
+}
+
+/* CTA Button shine effect */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transform: rotate(25deg) translateY(-100%);
+  animation: shine-sweep 4s infinite cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes shine-sweep {
+  0% {
+    transform: rotate(25deg) translateY(-120%);
+  }
+  30%, 100% {
+    transform: rotate(25deg) translateY(120%);
+  }
+}
+
+/* Range input styling for income calculator */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #1E293B;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #E61937;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(230, 25, 55, 0.6);
+  border: 2px solid #FFFFFF;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090C15;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Smooth Accordion */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* Floating Toast */
+#social-toast {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+}
+
+#social-toast.hidden-toast {
+  transform: translateY(100px);
+  opacity: 0;
+  pointer-events: none;
+}
