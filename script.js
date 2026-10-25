@@ -94,49 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     serviceSelect.addEventListener('change', updateIncomeCalculator);
   }
 
-  // 3. Countdown Timer (Evergreen 24 hours)
-  const hoursEl = document.getElementById('timer-hours');
-  const minsEl = document.getElementById('timer-mins');
-  const secsEl = document.getElementById('timer-secs');
-  const topTimerEl = document.getElementById('top-timer-display');
-
-  // Set or retrieve target time in localStorage
-  let targetTime = localStorage.getItem('ai_blueprint_timer_end');
-  const now = new Date().getTime();
-
-  if (!targetTime || parseInt(targetTime, 10) < now) {
-    // Set 14 hours 42 minutes from now
-    targetTime = now + (14 * 60 + 42) * 60 * 1000;
-    localStorage.setItem('ai_blueprint_timer_end', targetTime);
-  } else {
-    targetTime = parseInt(targetTime, 10);
-  }
-
-  function tickTimer() {
-    const current = new Date().getTime();
-    let diff = Math.max(0, targetTime - current);
-
-    if (diff === 0) {
-      // Reset so timer stays active and urgent
-      targetTime = current + (6 * 60 * 60 * 1000);
-      localStorage.setItem('ai_blueprint_timer_end', targetTime);
-      diff = targetTime - current;
-    }
-
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
-
-    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
-    if (minsEl) minsEl.textContent = String(minutes).padStart(2, '0');
-    if (secsEl) secsEl.textContent = String(seconds).padStart(2, '0');
-    if (topTimerEl) topTimerEl.textContent = `${hours}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
-  }
-
-  tickTimer();
-  setInterval(tickTimer, 1000);
-
-  // 4. Accordion FAQ
+  // 3. Accordion FAQ
   const accordionItems = document.querySelectorAll('.accordion-item');
   accordionItems.forEach(item => {
     const header = item.querySelector('.accordion-header');
