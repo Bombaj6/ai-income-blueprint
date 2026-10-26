@@ -199,6 +199,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 8. Meta Pixel InitiateCheckout Event on All Selar CTA Buttons
+  const checkoutButtons = document.querySelectorAll('a[href*="selar.com/pj819hlu90?add_to_cart=1"]');
+  checkoutButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          content_name: 'AI Income Blueprint',
+          currency: currentCurrency,
+          value: currentCurrency === 'NGN' ? 5000 : 10
+        });
+      }
+    });
+  });
+
   // Initial trigger
   updateIncomeCalculator();
 });
